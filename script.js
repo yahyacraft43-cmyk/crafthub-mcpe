@@ -335,7 +335,6 @@ function applyLanguage(lang) {
   document.documentElement.lang = lang;
   document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
 
-  document.getElementById('pageTitleTag') && (document.getElementById('pageTitleTag').textContent = tr.title);
   document.title = tr.title;
   document.getElementById('pageTitle').textContent = tr.title;
   document.getElementById('searchBar').placeholder = tr.searchPlaceholder;
@@ -384,3 +383,10 @@ window.addEventListener('load', () => {
     if (splash) splash.classList.add('hide');
   }, 1800);
 });
+
+// ===== تسجيل Service Worker (لتمكين التثبيت كتطبيق) =====
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('sw.js').catch(() => {});
+  });
+    }
