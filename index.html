@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO -->
+<title>CraftHub MCPE - أفضل مودات ماين كرافت للجوال</title>
+<meta name="description" content="CraftHub MCPE - موقعك الأول لتحميل مودات وإضافات ماين كرافت Bedrock للجوال. مودات مجانية محدثة: Action & Stuff، Realistic Biomes، World Builder والمزيد.">
+<meta name="keywords" content="CraftHub MCPE, مودات ماين كرافت, تحميل مودات, Minecraft Bedrock, addons, MCPE mods">
+<meta name="author" content="Yahya Craft">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph -->
+<meta property="og:title" content="CraftHub MCPE - أفضل مودات ماين كرافت للجوال">
+<meta property="og:description" content="حمّل أفضل مودات ماين كرافت Bedrock للجوال مجانًا">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yourname.github.io/crafthub-mcpe/">
+<meta property="og:image" content="https://yourname.github.io/crafthub-mcpe/action-and-stuff.png">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="CraftHub MCPE">
+<meta name="twitter:description" content="حمّل أفضل مودات ماين كرافت للجوال">
+<meta name="twitter:image" content="https://yourname.github.io/crafthub-mcpe/action-and-stuff.png">
+
+<!-- PWA -->
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#8ab4f8">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="splashScreen" class="splash-screen">
+  <div class="splash-content">
+    <div class="spinner"></div>
+    <h1 class="splash-title">CraftHub MCPE</h1>
+    <p class="splash-sub" id="splashSub">جارٍ التحميل...</p>
+  </div>
+</div>
+
+<div class="drawer-overlay" id="drawerOverlay"></div>
+<aside class="drawer" id="drawer">
+  <div class="drawer-header">
+    <div class="drawer-logo">🎮</div>
+    <h2>CraftHub MCPE</h2>
+    <p class="drawer-version">v1.0.0</p>
+  </div>
+  <nav class="drawer-nav">
+    <button class="drawer-item active" data-tab="tabHome">
+      <span class="drawer-icon">🏠</span>
+      <span id="navHome">الرئيسية</span>
+    </button>
+    <button class="drawer-item" data-tab="tabContact">
+      <span class="drawer-icon">✉️</span>
+      <span id="navContact">تواصل معنا</span>
+    </button>
+    <button class="drawer-item" data-tab="tabAbout">
+      <span class="drawer-icon">ℹ️</span>
+      <span id="navAbout">حول التطبيق</span>
+    </button>
+  </nav>
+  <div class="drawer-footer">تطوير: Yahya Craft</div>
+</aside>
+
+<header>
+  <button class="menu-btn" id="menuBtn">☰</button>
+  <button class="lang-toggle" id="langToggle">EN</button>
+  <h1 id="pageTitle">CraftHub MCPE</h1>
+  <input type="text" id="searchBar" class="search-bar" placeholder="🔍 ابحث عن مود...">
+</header>
+
+<main>
+  <section class="tab-page active" id="tabHome">
+    <div id="modsContainer" class="mods-container"></div>
+    <p id="noResults" class="no-results" style="display:none;">لا توجد نتائج مطابقة</p>
+  </section>
+
+  <section class="tab-page" id="tabContact">
+    <div class="info-card">
+      <h2 id="contactTitle">تواصل معنا</h2>
+      <p id="contactDesc">هل لديك اقتراح أو استفسار؟ راسلنا عبر:</p>
+      <a class="contact-btn" href="mailto:yahyacraft@gmail.com">
+        📧 <span id="contactEmailLabel">البريد الإلكتروني</span>
+      </a>
+      <a class="contact-btn" href="https://wa.me/213000000000" target="_blank">
+        💬 <span id="contactWhatsappLabel">واتساب</span>
+      </a>
+      <a class="contact-btn" href="https://youtube.com/@yahyacraft" target="_blank">
+        ▶️ <span id="contactYoutubeLabel">قناة يوتيوب</span>
+      </a>
+      <a class="contact-btn" href="https://instagram.com/yahyacraft" target="_blank">
+        📷 <span id="contactInstagramLabel">إنستغرام</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="tab-page" id="tabAbout">
+    <div class="info-card">
+      <h2 id="aboutTitle">حول التطبيق</h2>
+      <p class="about-line"><strong id="aboutAppLabel">التطبيق:</strong> CraftHub MCPE</p>
+      <p class="about-line"><strong id="aboutDevLabel">المطور:</strong> Yahya Craft</p>
+      <p class="about-line"><strong id="aboutVersionLabel">الإصدار:</strong> <span class="version-badge">1.0.0</span></p>
+      <h3 class="changelog-title" id="changelogTitle">📝 ما الجديد؟</h3>
+      <ul class="changelog">
+        <li id="changelog1">✅ الإصدار الأول من CraftHub MCPE</li>
+        <li id="changelog2">✅ 5 مودات ماين كرافت للجوال</li>
+        <li id="changelog3">✅ دعم العربية والإنجليزية</li>
+        <li id="changelog4">✅ بحث فوري + فيديوهات + صور</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer id="pageFooter">تأكد من توافق الإصدار مع نسخة ماين كرافت لديك. • تطوير: Yahya Craft</footer>
+
+<div id="devPage" class="dev-page">
+  <div class="dev-header">
+    <button class="back-btn" id="devBack">→ رجوع</button>
+    <div class="dev-profile">
+      <img class="dev-avatar-lg" id="devAvatar" src="" alt="">
+      <div>
+        <h2 id="devName"></h2>
+        <p class="dev-count" id="devCount"></p>
+      </div>
+    </div>
+  </div>
+  <div id="devModsContainer" class="mods-container"></div>
+</div>
+
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <button class="modal-close" id="modalClose">✕</button>
+    <h2 id="modalTitle"></h2>
+    <p class="modal-meta" id="modalMeta"></p>
+    <p class="modal-desc" id="modalDesc"></p>
+    <h3 class="section-title" id="imagesTitle">📷 الصور</h3>
+    <div class="gallery" id="modalGallery"></div>
+    <h3 class="section-title" id="videoTitle">🎬 الفيديو</h3>
+    <div class="video-box" id="modalVideos"></div>
+    <a class="btn modal-btn" id="modalDownload" target="_blank" rel="noopener">تحميل</a>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
