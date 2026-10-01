@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://yourname.github.io/crafthub-mcpe/sitemap.xml
+Sitemap: https://yahyacraft43-cmyk.github.io/crafthub-mcpe/sitemap.xml
