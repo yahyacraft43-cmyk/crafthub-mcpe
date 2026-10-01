@@ -1,4 +1,4 @@
-// Service Worker بسيط
+// Service Worker لـ CraftHub MCPE
 self.addEventListener('install', (event) => {
   self.skipWaiting();
 });
@@ -8,5 +8,5 @@ self.addEventListener('activate', (event) => {
 });
 
 self.addEventListener('fetch', (event) => {
-  // تمرير الطلبات مباشرة (بدون cache)
+  // تمرير الطلبات مباشرة
 });
