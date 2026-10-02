@@ -80,7 +80,7 @@ const i18n = {
 };
 
 const developers = {
-  "Oreville Studios": "orville-studios.jpg"
+  "Oreville Studios": "oreville-studios.jpg"
 };
 
 const mods = [
@@ -432,4 +432,4 @@ if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('sw.js').catch(() => {});
   });
-}
+    }
