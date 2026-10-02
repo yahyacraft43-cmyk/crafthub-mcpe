@@ -29,11 +29,13 @@ const i18n = {
     aboutDevLabel: "المطور:",
     aboutVersionLabel: "الإصدار:",
     changelogTitle: "📝 ما الجديد؟",
+    compatibleWith: "متوافق مع",
     changelog: [
       "✅ الإصدار الأول من CraftHub MCPE",
       "✅ 5 مودات ماين كرافت للجوال",
       "✅ دعم العربية والإنجليزية",
-      "✅ بحث فوري + فيديوهات + صور"
+      "✅ بحث فوري + فيديوهات + صور",
+      "✅ إظهار توافق المود مع إصدارات ماين كرافت"
     ]
   },
   en: {
@@ -66,28 +68,34 @@ const i18n = {
     aboutDevLabel: "Developer:",
     aboutVersionLabel: "Version:",
     changelogTitle: "📝 What's New?",
+    compatibleWith: "Compatible with",
     changelog: [
       "✅ First release of CraftHub MCPE",
       "✅ 5 Minecraft mods for mobile",
       "✅ Arabic and English support",
-      "✅ Instant search + videos + images"
+      "✅ Instant search + videos + images",
+      "✅ Show mod compatibility with Minecraft versions"
     ]
   }
 };
 
 const developers = {
-  "Orville Studios": "orville-studios.jpg",
   "Oreville Studios": "orville-studios.jpg"
 };
 
 const mods = [
   {
     name: "Action & Stuff",
-    developer: "Orville Studios",
+    developer: "Oreville Studios",
     version: "v1.11.1",
+    mcVersion: "1.21.x",
     description: {
       ar: "هذا المود يضيف حركات واقعية وجرافيك جيد ويضيف حركات رائعة إستكشفوا بأنفسكم!",
       en: "This mod adds realistic animations and great graphics with amazing moves."
+    },
+    longDescription: {
+      ar: "مود Action & Stuff هو أحد أفضل مودات ماين كرافت Bedrock للجوال. يضيف هذا المود مجموعة ضخمة من الأسلحة النارية والمركبات والحركات القتالية الواقعية. يتميز برسومات عالية الجودة، وتأثيرات صوتية ممتازة، وحركات شخصية سلسة تشمل الركض والقفز والتسلل. يمكنك الآن قيادة السيارات والدراجات النارية والطائرات، واستخدام البنادق والقنابل والأدوات القتالية المتنوعة. المود مثالي للاعبين الذين يريدون تجربة أكشن كاملة داخل ماين كرافت. يعمل بسلاسة على الأجهزة المتوسطة والضعيفة، ولا يحتاج إلى أي مودات إضافية.",
+      en: "Action & Stuff is one of the best Minecraft Bedrock mods for mobile. It adds a huge collection of firearms, vehicles, and realistic combat animations. Features high-quality graphics, excellent sound effects, and smooth character animations including running, jumping, and sneaking. You can now drive cars, motorcycles, and planes, and use rifles, grenades, and various combat tools. Perfect for players who want a full action experience in Minecraft. Works smoothly on medium and low-end devices, and requires no additional mods."
     },
     image: "action-and-stuff.png",
     link: "https://www.mediafire.com/file/qyxo4uek4e98adz/actions-stuff-v-1-11-1.mcpack/file",
@@ -96,11 +104,16 @@ const mods = [
   },
   {
     name: "Villager News",
-    developer: "Orville Studios",
+    developer: "Oreville Studios",
     version: "v1.0",
+    mcVersion: "1.21.x",
     description: {
       ar: "القرويين يتحدثون حمل المود وأعرف ذلك",
       en: "Villagers are talking! Download the mod and find out for yourself."
+    },
+    longDescription: {
+      ar: "مود Villager News يضيف شخصيات القرويين الشهيرة من سلسلة فيديوهات Villager News الشهيرة على يوتيوب. سيتحدث القرويون معك، ويتفاعلون مع الأحداث من حولهم، ويقدمون لك نشرات إخبارية ساخرة عن العالم داخل ماين كرافت. المود يضيف أيضاً مظاهر جديدة للقرية وأدوات إخبارية مثل الميكروفون والكاميرا. مثالي للاعبين الذين يريدون إضافة لمسة كوميدية وممتعة لعالمهم.",
+      en: "Villager News mod adds the famous villagers from the popular YouTube series Villager News. Villagers will talk to you, react to events around them, and present sarcastic news reports about the Minecraft world. The mod also adds new village features and news tools like microphones and cameras. Perfect for players who want a comedic and fun addition to their world."
     },
     image: "villager-news.png",
     link: "https://www.mediafire.com/file/nv1thtvih8xagc5/Villager_News_1.0_Add-On__1.mcaddon/file",
@@ -109,11 +122,16 @@ const mods = [
   },
   {
     name: "Action & Stuff Flat Textures",
-    developer: "Orville Studios",
+    developer: "Oreville Studios",
     version: "v1.0",
+    mcVersion: "1.21.x",
     description: {
       ar: "نسخة بجرافيك مسطّح (Flat) من مود Action & Stuff. خفيف وسريع ومناسب للأجهزة الضعيفة.",
       en: "A flat-textured version of Action & Stuff. Lightweight and fast."
+    },
+    longDescription: {
+      ar: "هذه نسخة بديلة من مود Action & Stuff الشهير، لكن برسومات مسطّحة (Flat Textures). تتميز النسخة بأنها أخف بكثير على الجهاز، وتعمل بسلاسة على الأجهزة الضعيفة والمتوسطة. تحتفظ بجميع الميزات الأساسية للمود الأصلي من أسلحة ومركبات وحركات قتالية، لكن بألوان وأنماط مبسطة. مثالية للاعبين الذين يعانون من بطء الأداء، أو الذين يفضلون الأسلوب الرسومي المبسّط.",
+      en: "This is an alternative version of the popular Action & Stuff mod, but with flat textures. This version is much lighter on the device and runs smoothly on low-end and mid-range devices. It keeps all the core features of the original mod including weapons, vehicles, and combat animations, but with simplified colors and patterns. Perfect for players who suffer from lag, or prefer the minimalist graphic style."
     },
     image: "ac-flat-texture.png",
     link: "https://www.mediafire.com/file/a0xyo22ddk78i9c/Actions+Stuff+Flat+Textures.mcpack/file",
@@ -122,11 +140,16 @@ const mods = [
   },
   {
     name: "Realistic Biomes",
-    developer: "Orville Studios",
+    developer: "Oreville Studios",
     version: "v1.3",
+    mcVersion: "1.20.x - 1.21.x",
     description: {
       ar: "مود يضيف بيئات واقعية وجميلة إلى ماين كرافت، مع تحسينات في التضاريس والنباتات والأجواء.",
       en: "A mod that adds realistic and beautiful biomes to Minecraft."
+    },
+    longDescription: {
+      ar: "مود Realistic Biomes يعيد تصميم بيئات ماين كرافت بالكامل لتصبح أكثر واقعية وجمالاً. يضيف المود أشجاراً جديدة، ونباتات متنوعة، وتضاريس مختلفة، وأجواء جوية محسّنة تشمل الضباب والأمطار والثلوج. تجد فيه بيئات جديدة مثل الغابات الاستوائية، والصحاري المتوهجة، والجبال الثلجية، والسافانا الأفريقية. كما يحسّن المود المخلوقات الموجودة ويضيف مخلوقات جديدة في كل بيئة. مثالي للاعبين الذين يريدون استكشاف عالم ماين كرافت بشكل جديد تماماً.",
+      en: "Realistic Biomes mod completely redesigns Minecraft environments to be more realistic and beautiful. It adds new trees, diverse plants, different terrains, and improved weather effects including fog, rain, and snow. You'll find new biomes like tropical forests, glowing deserts, snowy mountains, and African savannas. The mod also improves existing creatures and adds new ones in each biome. Perfect for players who want to explore Minecraft in a completely new way."
     },
     image: "realistic-biomes.png",
     link: "https://www.mediafire.com/file/uikd3g855lti914/Realistic+Biomes+1.3+Add-On+(addon).mcaddon/file",
@@ -137,9 +160,14 @@ const mods = [
     name: "World Builder",
     developer: "Oreville Studios",
     version: "v1.6.1",
+    mcVersion: "1.21.x",
     description: {
       ar: "أداة احترافية لبناء وتعديل العوالم في ماين كرافت. انسخ، الصق، املأ، وارسم بالبلوكات بسهولة.",
-      en: "A professional tool for building and editing Minecraft worlds. Copy, paste, fill, and paint with blocks easily."
+      en: "A professional tool for building and editing Minecraft worlds."
+    },
+    longDescription: {
+      ar: "مود World Builder هو أداة قوية واحترافية للبناء في ماين كرافت. يمنحك تحكماً كاملاً في العالم من خلال أوامر بسيطة عبر عصا خشبية خاصة. يمكنك نسخ المباني الضخمة ولصقها في أي مكان، وملء المساحات بالبلوكات بسرعة، ورسم الأشكال الهندسية بسهولة. كما يمكنك استبدال البلوكات، وإنشاء جدران وأسقف ضخمة، وحتى نسخ مبانٍ كاملة من عوالم أخرى. مثالي للمعماريين والبنّائين الذين يريدون توفير الوقت والجهد، وللمبتدئين الذين يريدون إنشاء مشاريع ضخمة بسهولة.",
+      en: "World Builder is a powerful and professional building tool for Minecraft. It gives you full control over the world through simple commands using a special wooden wand. You can copy massive buildings and paste them anywhere, fill areas with blocks quickly, and draw geometric shapes easily. You can also replace blocks, create huge walls and ceilings, and even copy entire buildings from other worlds. Perfect for architects and builders who want to save time and effort, and for beginners who want to create massive projects easily."
     },
     image: "world-builder.png",
     link: "https://www.mediafire.com/file/f9szpztk97bfdtz/World+Builder+1.6.1.mcaddon/file",
@@ -181,12 +209,16 @@ function createCard(mod) {
   const card = document.createElement('div');
   card.className = 'card';
   const desc = mod.description[currentLang] || mod.description.ar;
+
   card.innerHTML = `
-    <img class="mod-img" src="${mod.image}" alt="${mod.name}">
+    <img class="mod-img" src="${mod.image}" alt="${mod.name}" onerror="this.src='action-and-stuff.png'">
     <div class="card-body">
       <h2>${mod.name}</h2>
       <p class="meta">${t().by} <span class="dev-link" data-dev="${mod.developer}">${mod.developer}</span></p>
-      <p class="meta ver">${mod.version}</p>
+      <div class="badges-row">
+        <span class="meta ver">${mod.version}</span>
+        <span class="mc-badge">🎮 ${mod.mcVersion}</span>
+      </div>
       <p class="desc">${desc}</p>
     </div>
     <a class="btn" href="${mod.link}" target="_blank" rel="noopener">${t().download}</a>
@@ -210,6 +242,7 @@ function getFilteredMods() {
   return mods.filter(m =>
     m.name.toLowerCase().includes(q) ||
     m.developer.toLowerCase().includes(q) ||
+    (m.mcVersion || '').toLowerCase().includes(q) ||
     (m.description[currentLang] || '').toLowerCase().includes(q) ||
     (m.description.ar || '').toLowerCase().includes(q) ||
     (m.description.en || '').toLowerCase().includes(q)
@@ -260,19 +293,29 @@ devBack.addEventListener('click', closeDevPage);
 
 function openModal(mod) {
   modalTitle.textContent = mod.name;
-  modalMeta.textContent = `${mod.developer} • ${mod.version} • ${t().platform}`;
-  modalDesc.textContent = mod.description[currentLang] || mod.description.ar;
+  modalMeta.innerHTML = `
+    ${mod.developer} • ${mod.version} • ${t().platform}<br>
+    <span class="mc-badge" style="margin-top:8px;display:inline-block;">🎮 ${t().compatibleWith} ${mod.mcVersion}</span>
+  `;
+
+  const longD = mod.longDescription ? (mod.longDescription[currentLang] || mod.longDescription.ar) : '';
+  const shortD = mod.description[currentLang] || mod.description.ar;
+  modalDesc.innerHTML = shortD + (longD ? '<br><br>' + longD : '');
+
   modalDownload.href = mod.link;
   modalDownload.textContent = t().download;
 
+  // الصور
   modalGallery.innerHTML = '';
   (mod.gallery || [mod.image]).forEach(src => {
     const img = document.createElement('img');
     img.src = src;
     img.alt = mod.name;
+    img.onerror = () => { img.src = 'action-and-stuff.png'; };
     modalGallery.appendChild(img);
   });
 
+  // الفيديو
   modalVideos.innerHTML = '';
   if (mod.videos && mod.videos.length > 0) {
     mod.videos.forEach(url => {
@@ -280,6 +323,7 @@ function openModal(mod) {
       iframe.src = url;
       iframe.height = "200";
       iframe.allowFullscreen = true;
+      iframe.loading = "lazy";
       modalVideos.appendChild(iframe);
     });
   } else {
@@ -287,11 +331,13 @@ function openModal(mod) {
   }
 
   modal.classList.add('open');
+  modal.style.display = 'flex';
   document.body.style.overflow = 'hidden';
 }
 
 function closeModal() {
   modal.classList.remove('open');
+  modal.style.display = 'none';
   document.body.style.overflow = '';
 }
 
@@ -384,9 +430,8 @@ window.addEventListener('load', () => {
   }, 1800);
 });
 
-// ===== تسجيل Service Worker (لتمكين التثبيت كتطبيق) =====
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('sw.js').catch(() => {});
   });
-    }
+  }
