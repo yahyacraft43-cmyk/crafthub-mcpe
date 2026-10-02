@@ -305,7 +305,6 @@ function openModal(mod) {
   modalDownload.href = mod.link;
   modalDownload.textContent = t().download;
 
-  // الصور
   modalGallery.innerHTML = '';
   (mod.gallery || [mod.image]).forEach(src => {
     const img = document.createElement('img');
@@ -315,7 +314,6 @@ function openModal(mod) {
     modalGallery.appendChild(img);
   });
 
-  // الفيديو
   modalVideos.innerHTML = '';
   if (mod.videos && mod.videos.length > 0) {
     mod.videos.forEach(url => {
@@ -434,4 +432,4 @@ if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('sw.js').catch(() => {});
   });
-  }
+}
