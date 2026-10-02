@@ -1,21 +1,33 @@
 {
   "name": "CraftHub MCPE",
   "short_name": "CraftHub",
-  "description": "أفضل مودات ماين كرافت للجوال",
+  "description": "أفضل مودات ماين كرافت Bedrock للجوال",
   "start_url": "/crafthub-mcpe/",
   "scope": "/crafthub-mcpe/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#0f1115",
-  "theme_color": "#8ab4f8",
+  "theme_color": "#4A8B2C",
   "lang": "ar",
   "dir": "rtl",
   "icons": [
     {
-      "src": "https://yahyacraft43-cmyk.github.io/crafthub-mcpe/action-and-stuff.png",
+      "src": "crafthub-logo.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
+    },
+    {
+      "src": "crafthub-logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "crafthub-logo.png",
+      "sizes": "1254x1254",
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ]
 }
