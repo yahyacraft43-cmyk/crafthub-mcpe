@@ -98,7 +98,7 @@ const mods = [
       en: "Action & Stuff is one of the best Minecraft Bedrock mods for mobile. It adds a huge collection of firearms, vehicles, and realistic combat animations. Features high-quality graphics, excellent sound effects, and smooth character animations including running, jumping, and sneaking. You can now drive cars, motorcycles, and planes, and use rifles, grenades, and various combat tools. Perfect for players who want a full action experience in Minecraft. Works smoothly on medium and low-end devices, and requires no additional mods."
     },
     image: "action-and-stuff.png",
-    link: "https://www.mediafire.com/file/ضع_رابط_v1.12_هنا/file",
+    link: "https://www.mediafire.com/file/5djsa96orw4qjop/Actions+and+Stuff+1.12.mcpack/file",
     gallery: ["action-and-stuff.png"],
     videos: ["https://www.youtube.com/embed/VDk8niB2Obw"]
   },
